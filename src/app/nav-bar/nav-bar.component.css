@@ -1,0 +1,18 @@
+body{
+    margin: 0 auto;
+}
+#navDiv{
+    width: 100%;
+}
+ul{
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
+}
+.navPodDiv{
+    display: inline-block;
+}
+li{
+    display: inline;
+    margin-left: 15px;
+}
