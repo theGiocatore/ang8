@@ -1,6 +1,3 @@
-/* body{
-    margin: 0px;
-} */
 #navDiv{
     position: fixed;
     top:0;
@@ -10,6 +7,13 @@
     align-items: center;
     cursor: pointer;
     background-color: white;
+    margin-bottom: 5px;
+    border-bottom: 5px solid rgb(194, 193, 187);
+}
+.linkovi{
+    height: 5em;
+    display: flex;
+    align-items: flex-end;
 }
 ul{
     font-size: 30px;

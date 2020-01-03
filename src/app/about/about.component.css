@@ -1,14 +1,29 @@
-p, h2{
-    width: 80%;
-}
-.asd {
-    height: 80vh;
+.abtDiv {
+    padding: 0 5em;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     text-align: justify;
-    margin: 0 auto;
-
+    padding-top: 10em;
+    padding-bottom: 5em;
 }
+.abtDiv p {
+    font-size: 2em;
+}
+.textAbout{
+width: 70vh;
+}
+.abtDiv h3 {
+    font-weight: normal;
+    align-items: center;
+}
+.imgAbt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
