@@ -1,0 +1,14 @@
+p, h2{
+    width: 80%;
+}
+.asd {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    text-align: justify;
+    margin: 0 auto;
+
+}

@@ -1,19 +1,27 @@
-body{
-    margin: 0 auto;
-}
+/* body{
+    margin: 0px;
+} */
 #navDiv{
+    position: fixed;
+    top:0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    background-color: white;
 }
 ul{
     font-size: 30px;
     text-decoration: none;
     list-style: none;
+    background-color: white;
 }
 li{
     display: inline;
     margin:0px 10px;
+}
+li a {
+    text-decoration: none;
+    color: black;
 }
