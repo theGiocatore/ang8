@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 3vw;
+    align-items: center;
+    width: 5em;
     height: 100%;
     position: fixed;
     right: 0;
+    background-color: rgb(248, 241, 230);
 }
 .aside img {
     height: 30px;
