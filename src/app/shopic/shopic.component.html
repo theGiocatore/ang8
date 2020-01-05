@@ -1,0 +1,25 @@
+<div class="container-fluid">
+
+    <div class="row">
+        <div class=" col-3 kolone">
+            <ul>
+                <li class="naslov">Categories:</li>
+                <li class="items">Living Room</li>
+                <li class="items">Bedroom</li>
+                <li class="items">Kitchen</li>
+                <li class="items">Bathroom</li>
+            </ul>
+        </div>
+        <div class="col-7 kolone">
+            <div *ngFor="let i of items" class="dBox">
+                <div class="imgBox">
+                    <img src="{{i.slika}}">
+                </div>
+                <div class="txtBox">
+                    <p>{{i.ime}}</p>
+                    <p>RSD{{i.cena}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

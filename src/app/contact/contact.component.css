@@ -4,7 +4,55 @@
     margin-left: 15%;
 
 }
+.levi>p {
+    margin: 3vh 0;
+}
 .desni {
     margin-top: 150px;
-    width: 30%;
+    padding-right: 6em;
 }
+.drugi{
+    width: 100%;
+    height: 40vh;
+    margin-top: 10vh;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+
+}
+.inputi, .njuz {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sirina{
+    width: 100%;
+    border-style: none;
+    border-bottom: 1px solid #616161;
+    resize: none;
+}
+.inputi input{
+    border-style: none;
+    border-bottom: 1px solid #616161;
+
+}
+.njuz input {
+    flex-basis: 69%;
+}
+.njuz button{
+    flex-basis: 29%;
+    background-color: black;
+    border-style: none;
+    color: #ffffff;
+    
+}
+form {
+    /* text-align: center; */
+    margin-bottom: 5vh;
+}
+form button {
+    border-style: none;
+    background-color: white;
+}
+
