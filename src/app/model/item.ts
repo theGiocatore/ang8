@@ -1,9 +1,10 @@
 export class Item{
     id:number;
     ime: string;
-    cena:number;
+    cena:string;
     opis:string;
     slika:string;
+    vrsta:string;
 
     constructor(obj?:any){
         this.id = obj.id;
@@ -11,5 +12,6 @@ export class Item{
         this.cena = obj.cena;
         this.opis = obj.opis;
         this.slika = obj.slika;
+        this.vrsta = obj.vrsta;
     }
 }
