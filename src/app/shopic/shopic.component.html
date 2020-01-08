@@ -4,17 +4,18 @@
         <div class=" col-3 kolone">
             <ul>
                 <li class="naslov">Categories:</li>
-                <li class="items"><button (click)="myF(this)"  class="Livingroom">Living Room</button></li>
-                <li class="items"><button (click)="myF(this)"  class="Bedroom">Bedroom</button></li>
-                <li class="items"><button (click)="myF(this)"  class="Kitchen" >Kitchen</button></li>
-                <li class="items"><button (click)="myF(this)"  class="Bathroom">Bathroom</button></li>
+                <li class="items"><button  type="button"  (click)="allin()">See all</button></li> 
+                <li class="items"><button  type="button"  (click)="kujna()">Kitchen</button></li>
+                <li class="items"><button  type="button"  (click)="slipingrum()">Bedroom</button></li>
+                <li class="items"><button  type="button"  (click)="livinrum()">Living room</button></li>
+                <li class="items"><button  type="button"  (click)="shitingrum()">Bathroom</button></li>
             </ul>
         </div>
         <div class="col-9 kolone k2">
-            <div *ngFor="let i of namestaj" class="dBox">
-                <div class="imgBox">
+            <div *ngFor="let i of varijabla" class="dBox">
+                <a href=""><div class="imgBox">
                     <img [src]="i.slika">
-                </div>
+                </div></a>
                 <div class="txtBox">
                     <p>{{i.ime}}</p>
                     <p class="djeronimo">RSD {{i.cena}}</p>

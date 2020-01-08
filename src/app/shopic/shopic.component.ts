@@ -73,32 +73,50 @@ const proizvodi = [
 export class ShopicComponent implements OnInit {
   private namestaj: Item[] = [];
   
-  
-
+  private varijabla: Item[] = [];
 
   constructor() { 
     for (let i of proizvodi){
-      this.namestaj.push(new Item(i));
+      this.varijabla.push(new Item(i));
     }
   }
+    
 
-//   myF(ovaj){
-//     var par = ovaj.className;
-//     var Item = [];
-    
-//     for (let i in proizvodi){
-//       if(proizvodi[i].vrsta === par){
-//             Item.push(proizvodi[i]);
-//             console.log(proizvodi[i].ime);
-//       // } else{
-//       //   let i ++ 
-//      };
-//     var Item = [];    
-//     }
-// }
-  
-  ngOnInit() {
-    
+  myFunction(p): void {
+    this.varijabla = [];
+    for(let i in proizvodi) {
+      if(proizvodi[i].vrsta === p ) {
+        this.varijabla.push(new Item(proizvodi[i]));
+      }
+    }
   }
-
+  kujna(){
+    this.varijabla=[];
+    this.myFunction("Kitchen");
+  }
+  livinrum(){
+    this.varijabla=[];
+    this.myFunction("Livingroom");
+  }
+  slipingrum(){
+    this.varijabla=[];
+    this.myFunction("Bedroom");
+  }
+  shitingrum(){
+    this.varijabla=[];
+    this.myFunction("Bathroom");
+  }
+  allin(){
+    this.varijabla=[];
+    for (let i of proizvodi){
+      this.varijabla.push(new Item(i));
+  }
 }
+
+
+  ngOnInit() {
+
+  }
+}
+
+

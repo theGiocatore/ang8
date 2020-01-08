@@ -53,4 +53,5 @@ ul{
 button{
     border-style: none;
     background-color: rgb(248, 241, 230);
+    outline: none;
 }
