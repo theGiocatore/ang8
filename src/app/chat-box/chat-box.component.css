@@ -5,6 +5,7 @@
     background-color:rgb(248, 241, 230) ;
     border: 2px solid rgb(194, 193, 187);
     text-align: center;
+    z-index: 9999;
 }
 form textarea{
     resize: none;

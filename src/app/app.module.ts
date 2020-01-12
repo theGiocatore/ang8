@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ChatBoxComponent } from './chat-box/chat-box.component';
 import { ContactComponent } from './contact/contact.component';
 import { ShopicComponent } from './shopic/shopic.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ShopicComponent } from './shopic/shopic.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

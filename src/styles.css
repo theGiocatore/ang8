@@ -1,3 +1,24 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+body {
+    background-color:rgb(248, 241, 230)
+}
+
+@media screen and (max-width:1650px){
+    .home2>h2 {
+        font-size: 1.5em;
+        font-weight: normal;
+        margin-bottom: 1em;
+        text-align: center;
+        
+    }
+    .home2>h3 {
+        font-size: 1em;
+        width: 50%;
+        text-align: center;
+        font-weight: normal;
+    }
+    
 }

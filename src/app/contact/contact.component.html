@@ -19,19 +19,24 @@
             </p>
         </div>
         <div class="col-lg-4 col-md-7 desni">
-            <form>
+            <form (ngSubmit) = "posalji()" novalidate #formular = "ngForm" >
                 <div class="inputi">
-                    <input name="ime" placeholder="Name" type="text">
-                    <input name="mail" placeholder="Email" type="email">
+                    <input name="ime" required #ime = "ngModel" [(ngModel)]="user.ime" placeholder="Name" type="text">
+                    <small class="text-danger" *ngIf = "ime.touched && ime.errors?.required">Enter your name</small>
+                    <input name="mail" required minlength="7" #mail = "ngModel" [(ngModel)]="user.mail" placeholder="Email" type="email">
+                    <small class="text-danger" *ngIf = "mail.touched && mail.errors?.required">Enter your e-mail</small>
+                    <small class="text-danger" *ngIf = "mail.touched && mail.errors?.minlength">Email invalid</small>
                 </div>
-                <input name="tema" class="sirina" placeholder="Subject" type="text"><br>
-                <textarea class="sirina" rows="4" placeholder="Message"></textarea><br>
-                <button type="submit">SEND</button>
+                <input name="tema" required #tema = "ngModel" [(ngModel)]="user.tema" class="sirina" placeholder="Subject" type="text"><br>
+                <small class="text-danger" *ngIf = "tema.touched && tema.errors?.required">Enter cc</small>
+                <textarea name="poruka" required #poruka = "ngModel" [(ngModel)]="user.poruka" class="sirina" rows="4" placeholder="Message"></textarea><br>
+                <small class="text-danger" *ngIf = "poruka.touched && poruka.errors?.required">Enter your name</small>
+                <button type="submit" [disabled] = "formular.form.invalid">SEND</button>
             </form>
             <p>Get our Newsletters</p>
             <div class="njuz">
                 <input type="email" placeholder="Enter your email">
-                <button type="submit">Subscribe Now</button>
+                <button type="submit" >Subscribe Now</button>
             </div>
         </div>
     </div>

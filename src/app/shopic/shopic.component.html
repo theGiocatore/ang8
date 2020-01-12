@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
     <div class="row">
-        <div class=" col-3 kolone">
+        <div class=" col-lg-3  kolone">
             <ul>
                 <li class="naslov">Categories:</li>
                 <li class="items"><button  type="button"  (click)="allin()">See all</button></li> 
@@ -11,7 +11,7 @@
                 <li class="items"><button  type="button"  (click)="shitingrum()">Bathroom</button></li>
             </ul>
         </div>
-        <div class="col-9 kolone k2">
+        <div class="col-lg-9  kolone k2">
             <div *ngFor="let i of varijabla" class="dBox">
                 <a href=""><div class="imgBox">
                     <img [src]="i.slika">
