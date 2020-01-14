@@ -16,7 +16,6 @@ private user = {
 }
 formular : NgForm;
 
-
   constructor() {
 
    }
@@ -25,6 +24,20 @@ formular : NgForm;
      console.log(JSON.stringify(this.user));
     this.formular.resetForm();
    }
+
+subscribe(){
+  let dgm = document.getElementById("sub");
+  let inp = document.getElementById("subInput");
+
+  console.log("You'll receive informations about our promotions on your e-mail : " + inp.value);
+
+  inp.value = "";
+
+}
+   
+
+
+
   ngOnInit() {
   }
 

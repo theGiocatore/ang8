@@ -14,7 +14,7 @@
     font-size: 2em;
 }
 .textAbout{
-width: 70vh;
+    width: 70vh;
 }
 .abtDiv h3 {
     font-weight: normal;
@@ -26,4 +26,12 @@ width: 70vh;
     align-items: center;
     margin: 0 auto;
 }
+@media screen and (max-width:1650px){
+    .textAbout{
+        width: 60vw;
+        }
+        .abtDiv h3 {
+            font-size: 1.5em;
+        }
+    }
 

@@ -30,13 +30,13 @@
                 <input name="tema" required #tema = "ngModel" [(ngModel)]="user.tema" class="sirina" placeholder="Subject" type="text"><br>
                 <small class="text-danger" *ngIf = "tema.touched && tema.errors?.required">Enter cc</small>
                 <textarea name="poruka" required #poruka = "ngModel" [(ngModel)]="user.poruka" class="sirina" rows="4" placeholder="Message"></textarea><br>
-                <small class="text-danger" *ngIf = "poruka.touched && poruka.errors?.required">Enter your name</small>
+                <small class="text-danger" *ngIf = "poruka.touched && poruka.errors?.required">Enter the message</small>
                 <button type="submit" [disabled] = "formular.form.invalid">SEND</button>
             </form>
             <p>Get our Newsletters</p>
             <div class="njuz">
-                <input type="email" placeholder="Enter your email">
-                <button type="submit" >Subscribe Now</button>
+                <input id="subInput" type="email" placeholder="Enter your email">
+                <button value="" id="sub" (click)="subscribe()" type="submit" >Subscribe Now</button>
             </div>
         </div>
     </div>
