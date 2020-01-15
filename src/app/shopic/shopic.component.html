@@ -13,7 +13,7 @@
         </div>
         <div class="col-lg-9  kolone k2">
             <div *ngFor="let i of varijabla" class="dBox">
-                <a href=""><div class="imgBox">
+                <a a [routerLink]="['/item']"><div class="imgBox">
                     <img [src]="i.slika">
                 </div></a>
                 <div class="txtBox">

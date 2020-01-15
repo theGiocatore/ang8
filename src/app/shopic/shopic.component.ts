@@ -71,7 +71,7 @@ const proizvodi = [
 
 
 export class ShopicComponent implements OnInit {
-  private namestaj: Item[] = [];
+  // private namestaj: Item[] = [];
   
   private varijabla: Item[] = [];
 

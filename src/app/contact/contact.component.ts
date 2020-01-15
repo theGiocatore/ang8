@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {NgForm} from '@angular/forms'
+import { isNgContainer } from '@angular/compiler';
+import { isGeneratedFile } from '@angular/compiler/src/aot/util';
 
 
 @Component({
@@ -21,20 +23,22 @@ formular : NgForm;
    }
    posalji(){
 
-     console.log(JSON.stringify(this.user));
-    this.formular.resetForm();
+     console.log("treba ovo da odradim, nije zavrseno :)");
+  
    }
 
 subscribe(){
   let dgm = document.getElementById("sub");
-  let inp = document.getElementById("subInput");
+  let inp = (<HTMLInputElement> document.getElementById("subInput"));
 
-  console.log("You'll receive informations about our promotions on your e-mail : " + inp.value);
-
-  inp.value = "";
-
+  if(inp.value.length > 7){
+  console.log("You will start receiving our newsletters at your Email address: " + inp.value);
+  inp.value = "";  
+  }else{
+    console.log("Please enter valid email address.");
+  }
 }
-   
+  
 
 
 

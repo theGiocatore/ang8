@@ -10,6 +10,7 @@ import { ChatBoxComponent } from './chat-box/chat-box.component';
 import { ContactComponent } from './contact/contact.component';
 import { ShopicComponent } from './shopic/shopic.component';
 import { FormsModule } from '@angular/forms';
+import { ItemComponent } from './shopic/item/item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     ChatBoxComponent,
     ContactComponent,
-    ShopicComponent
+    ShopicComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
