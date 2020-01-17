@@ -11,7 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ShopicComponent } from './shopic/shopic.component';
 import { FormsModule } from '@angular/forms';
 import { ItemComponent } from './shopic/item/item.component';
-
+import { HttpClientModule} from "@angular/common/http"
+import { from } from 'rxjs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { ItemComponent } from './shopic/item/item.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

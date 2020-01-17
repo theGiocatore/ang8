@@ -1,7 +1,11 @@
-.glavniNajglavniji{
-    margin-top: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container-fluid{
+    padding: 20vh 10vw ;
+    background-color:rgb(248, 241, 230);
+    height: 100vh;
+}
+.folder{
+    width: 40vw;
+}
+.slika1{
+    align-self: center;
 }
