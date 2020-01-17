@@ -21,17 +21,27 @@ formular : NgForm;
   constructor() {
 
    }
-   posalji(){
+posalji(){
 
      console.log("treba ovo da odradim, nije zavrseno :)");
   
    }
+upozorenje(){
+    let mejl = (<HTMLInputElement>document.getElementById("inputMail"));
+    let poruka = document.getElementById("text1");
+    poruka.style.display="block";
+    if(mejl.value.includes("@")){
+      poruka.style.display="none";
+    }
+
+}
+
 
 subscribe(){
   let dgm = document.getElementById("sub");
   let inp = (<HTMLInputElement> document.getElementById("subInput"));
 
-  if(inp.value.length > 7){
+  if((inp.value.length > 7) && (inp.value.includes("@"))){
   console.log("You will start receiving our newsletters at your Email address: " + inp.value);
   inp.value = "";  
   }else{

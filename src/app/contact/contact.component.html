@@ -23,9 +23,10 @@
                 <div class="inputi">
                     <input name="ime" required #ime = "ngModel" [(ngModel)]="user.ime" placeholder="Name" type="text">
                     <small class="text-danger" *ngIf = "ime.touched && ime.errors?.required">Enter your name</small>
-                    <input name="mail" required minlength="7" #mail = "ngModel" [(ngModel)]="user.mail" placeholder="Email" type="email">
+                    <input name="mail" (click)="upozorenje()" id="inputMail" required minlength="7" #mail = "ngModel" [(ngModel)]="user.mail" placeholder="Email" type="email">
                     <small class="text-danger" *ngIf = "mail.touched && mail.errors?.required">Enter your e-mail</small>
                     <small class="text-danger" *ngIf = "mail.touched && mail.errors?.minlength">Email invalid</small>
+                    <small id="text1" style="display: none;"  class="text-danger">Must contain " @ " symbol</small>
                 </div>
                 <input name="tema" required #tema = "ngModel" [(ngModel)]="user.tema" class="sirina" placeholder="Subject" type="text"><br>
                 <small class="text-danger" *ngIf = "tema.touched && tema.errors?.required">Enter cc</small>
