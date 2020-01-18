@@ -16,16 +16,36 @@ export class ShopicComponent implements OnInit {
 
   constructor(private servis: ShopService) { 
    
-
 }
-
+funkcija(par){
+  this.servis.filtriraj(par).subscribe(data=>{
+    this.varijabla = data;
+  });
+}
+all(){
+  this.servis.getAll().subscribe(data=>{
+    this.varijabla = data;
+  });
+}
+kujna(){
+  this.funkcija("Kitchen");
+}
+slipingrum(){
+  this.funkcija("Bedroom");
+}
+livinrum(){
+  this.funkcija("Livingroom");
+}
+shhhtingrum(){
+  this.funkcija("Bathroom");
+}
 
   ngOnInit() {
 
-    this.servis.getAll().subscribe(data=>{
-      this.varijabla = data;
-      
-    })
+    this.all()
+    
+    
+
   }
 }
 

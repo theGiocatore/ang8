@@ -3,9 +3,37 @@
     background-color:rgb(248, 241, 230);
     height: 100vh;
 }
-.folder{
-    width: 40vw;
+.folder1{
+    display: flex;
+    justify-content: center;
 }
-.slika1{
-    align-self: center;
+.slika{
+    width: 600px;
+    height: 500px;
+    margin: 5px;
+}
+.slika img {
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.naslov{
+    font-size: 2em;
+}
+.cena {
+    font-size: 1.5em;
+}
+#dugme{
+    background-color: black;
+    padding: 0.5em 3em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.row2 {
+    margin-top: 3em;
+}
+.folder span {
+    cursor: pointer;
 }

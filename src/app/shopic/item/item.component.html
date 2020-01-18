@@ -1,26 +1,25 @@
 <div class="container-fluid">
     <div class="row">
-        <div class=" folder col-md-6">
-            <p>Home/Shop/</p>
+        <div class=" folder1 col-md-4 text-center">
+            <p style="width: 100%;">Home/Shop/{{artikal?.ime}}</p>
         </div>
-        <div class="folder col-md-6">
-            <p> &lt; Prev | Next &gt; </p>
+        <div class="folder col-md-4 text-right">
+            <p><a><span (click) = "umanjiId()" > &lt; Prev</span></a> | <a><span (click) = "uvecajId()"  >Next &gt;</span></a></p>
         </div>
     </div>
-    <div class="row">
-        <div class="folder slika1 col-md-8">
-            <div class="slika" style="border: 2px solid black; width: 400px; height:400px;">
-               <img> 
+    <div class="row row2">
+        <div class="folder1 col-md-8">
+            <div class="slika">
+               <img [src]="artikal?.slika"> 
             </div>
-            
         </div>
-        <div class="folder col-md-3">
-            <p>Ime</p>
-            <p>Cena</p>
-            <p>Opis</p>
+        <div  class="folder col-md-3">
+            <p class="naslov">{{artikal?.ime}}</p>
+            <p class="cena">{{artikal?.cena}}</p>
+            <p>{{artikal?.opis}}</p>
             <label for="kolicina">Quantity</label><br>
-            <input style="width: 50px;" id="kolicina" type="number"><br><br>
-            <p>Dugme</p>
+            <input style="width: 50px;" id="kolicina" type="number" value="1" min="1" max="10"><br><br>
+            <p id="dugme"(click)= "konzola()">Add to cart</p>
         </div>
     </div>
 

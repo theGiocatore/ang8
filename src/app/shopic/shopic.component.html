@@ -4,16 +4,16 @@
         <div class=" col-lg-3  kolone">
             <ul>
                 <li class="naslov">Categories:</li>
-                <li class="items"><button  type="button"  (click)="allin()">See all</button></li> 
+                <li class="items"><button  type="button"  (click)="all()">See all</button></li> 
                 <li class="items"><button  type="button"  (click)="kujna()">Kitchen</button></li>
                 <li class="items"><button  type="button"  (click)="slipingrum()">Bedroom</button></li>
                 <li class="items"><button  type="button"  (click)="livinrum()">Living room</button></li>
-                <li class="items"><button  type="button"  (click)="shitingrum()">Bathroom</button></li>
+                <li class="items"><button  type="button"  (click)="shhhtingrum()">Bathroom</button></li>
             </ul>
         </div>
         <div class="col-lg-9  kolone k2">
             <div *ngFor="let i of varijabla" class="dBox">
-                <a [routerLink]="['/item/',  i.id ]"><div class="imgBox">
+                <a [routerLink]="['/shop/item/',  i.id ]"><div class="imgBox">
                     <img [src]="i.slika">
                 </div></a>
                 <div class="txtBox">

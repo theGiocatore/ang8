@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:"contact",component: ContactComponent},
   {path:"shop",component:ShopicComponent},
   {path:"item",component:ItemComponent},
-  {path:"item/:id" ,component:ItemComponent},
+  {path:"shop/item/:id" ,component:ItemComponent},
   {path:"", redirectTo: "/home",pathMatch:"full"}
 ];
 
