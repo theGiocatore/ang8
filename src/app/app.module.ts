@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { ItemComponent } from './shopic/item/item.component';
 import { HttpClientModule} from "@angular/common/http"
 import { from } from 'rxjs';
+import { CartComponent } from './shopic/item/cart/cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { from } from 'rxjs';
     ChatBoxComponent,
     ContactComponent,
     ShopicComponent,
-    ItemComponent
+    ItemComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

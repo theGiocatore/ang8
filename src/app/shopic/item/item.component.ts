@@ -11,7 +11,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ItemComponent implements OnInit {
 artikal : Item;
-
+kolicina = {
+  value:1
+}
 id:number;
   constructor(private servis:ShopService, private route: ActivatedRoute) { }
 
@@ -28,12 +30,14 @@ umanjiId(){
   this.resetuj(this.id);
   this.servis.getItem(this.id).subscribe(data =>
     this.artikal = data);
+  this.kolicina.value = 1;
 }
 uvecajId(){
   this.id = this.id +1;
   this.resetuj(this.id);
   this.servis.getItem(this.id).subscribe(data =>
     this.artikal = data); 
+  this.kolicina.value = 1;
 }
 
 konzola(){
@@ -44,7 +48,6 @@ konzola(){
     this.route.paramMap.subscribe(params=>
       this.id = Number(params.get("id"))
     );
-    console.log(this.id);
       this.servis.getItem(this.id).subscribe(data =>
         this.artikal = data
         );
