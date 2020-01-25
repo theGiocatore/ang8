@@ -12,8 +12,10 @@ import { ShopicComponent } from './shopic/shopic.component';
 import { FormsModule } from '@angular/forms';
 import { ItemComponent } from './shopic/item/item.component';
 import { HttpClientModule} from "@angular/common/http"
-import { from } from 'rxjs';
 import { CartComponent } from './shopic/item/cart/cart.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { CartComponent } from './shopic/item/cart/cart.component';
     ContactComponent,
     ShopicComponent,
     ItemComponent,
-    CartComponent
+    CartComponent,
+    LogInComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

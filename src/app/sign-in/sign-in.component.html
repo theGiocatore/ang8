@@ -1,0 +1,16 @@
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" [routerLink]="['/home']">&times;</a>
+    <div class="overlay-content">
+        <div class="formaIdeale">
+            <h1>Sign Up</h1>
+            <form action="">
+                <input type="text" placeholder="First Name" name="fname"><br>
+                <input type="text" placeholder="Last Name" name="lname"><br>
+                <input type="email" placeholder="Email" name="email"><br>
+                <input type="password" placeholder="Password" name="pass">
+                <button type="submit" class="dugme" name="dugme">Log In</button><br>
+                <p>Already a member? <span><a id="sajnap" [routerLink]="['/login']"><strong>Log In</strong></a></span></p>
+            </form>
+        </div>
+    </div>
+</div>
