@@ -3,13 +3,13 @@
     <div class="overlay-content">
         <div class="formaIdeale">
             <h1>Sign Up</h1>
-            <form action="">
-                <input type="text" placeholder="First Name" name="fname"><br>
-                <input type="text" placeholder="Last Name" name="lname"><br>
-                <input type="email" placeholder="Email" name="email"><br>
-                <input type="password" placeholder="Password" name="pass">
-                <button type="submit" class="dugme" name="dugme">Log In</button><br>
-                <p>Already a member? <span><a id="sajnap" [routerLink]="['/login']"><strong>Log In</strong></a></span></p>
+            <form (ngSubmit) = "registrujSe(f)" #f = "ngForm">
+                <input type="text" placeholder="First Name" name="fname" ngModel class="form-control"><br>
+                <input type="text" placeholder="Last Name" name="lname" ngModel class="form-control"><br>
+                <input type="email" placeholder="Email" name="email" ngModel class="form-control"><br>
+                <input type="password" placeholder="Password" name="pass" ngModel class="form-control">
+                <button type="submit" class="dugme" name="dugme">Sign Up</button><br>
+                <p><small>Already a member? </small>  <span><a id="sajnap" [routerLink]="['/login']"><strong>Log In</strong></a></span></p>
             </form>
         </div>
     </div>

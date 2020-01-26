@@ -31,7 +31,7 @@
   }
   .formaIdeale{
       background-color: white;
-      padding: 5em 1em;
+      padding: 4em 1em 2em 1em;
       display: flex;
       flex-direction: column;
       width: 20vw;
