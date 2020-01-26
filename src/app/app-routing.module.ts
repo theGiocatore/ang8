@@ -5,6 +5,9 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ShopicComponent } from './shopic/shopic.component';
 import { ItemComponent } from './shopic/item/item.component';
+import { CartComponent } from './shopic/item/cart/cart.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 const routes: Routes = [
@@ -13,6 +16,9 @@ const routes: Routes = [
   {path:"contact",component: ContactComponent},
   {path:"shop",component:ShopicComponent},
   {path:"item",component:ItemComponent},
+  {path:"cart", component:CartComponent},
+  {path:"login", component:LogInComponent},
+  {path:"signin",component:SignInComponent },
   {path:"shop/item/:id" ,component:ItemComponent},
   {path:"", redirectTo: "/home",pathMatch:"full"}
 ];

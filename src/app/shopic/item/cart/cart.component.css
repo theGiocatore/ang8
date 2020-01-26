@@ -1,0 +1,14 @@
+.container-fluid{
+    background-color: rgb(248, 241, 230);
+    height: 100vh;
+    padding-top: 180px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.qtyBorder{
+    border: 1px solid rgb(39, 39, 39);
+    padding: 0.5em;
+    width: 3em;
+    height:2.5em;
+    text-align: center;
+}

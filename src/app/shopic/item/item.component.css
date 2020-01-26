@@ -37,3 +37,10 @@
 .folder span {
     cursor: pointer;
 }
+.opis{
+    height: 120px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,62 @@
+.overlay {  
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    background-image:url("../../assets/signupPattern.jpg") ;
+    background-color:rgb(248, 241, 230);
+    background-blend-mode: darken;
+    overflow-x: hidden; 
+    transition: 1.5s; 
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    padding: 0 0.5em;
+    background-color: white;
+  }
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  .formaIdeale{
+      background-color: white;
+      padding: 5em 1em;
+      display: flex;
+      flex-direction: column;
+      width: 20vw;
+      margin: 0 auto;
+  }
+  input{
+      margin-bottom:1.5em;
+      border-style: none;
+      border-bottom: 1px solid rgb(24, 24, 24);
+  }
+  form{
+      padding-top: 3em;
+  }
+  .dugme{
+      width: 10vw;
+      padding: 0.5em 1em;
+      background-color:black;
+      color: white;
+  }
+  .fpass{
+      margin:4em 0em;
+  }
+  #sajnap{
+      color: black;
+  }
+  .fpass a p{
+      color: black;
+  }

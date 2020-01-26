@@ -8,7 +8,7 @@
     background-color: white;
     margin-bottom: 5px;
     border-bottom: 5px solid rgb(194, 193, 187);
-    z-index: 9999;
+    z-index: 9998;
 }
 .linkovi{
     height: 5em;
@@ -29,6 +29,12 @@ li a {
     text-decoration: none;
     color: black;
 }
-.aktiv{
-    color: green;
+.logIn{
+    font-weight: bold;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+a{
+    text-decoration: none;
 }
