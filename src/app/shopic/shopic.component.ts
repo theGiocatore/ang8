@@ -23,10 +23,12 @@ funkcija(par){
   });
 }
 all(){
-  this.servis.getAll().subscribe(data=>{
-    this.varijabla = data;
-  });
-}
+  this.servis.getAll().subscribe(
+    (data:any[])=>this.varijabla = data,
+    (error) => console.log(error)
+  );
+  }
+
 kujna(){
   this.funkcija("Kitchen");
 }
@@ -44,9 +46,8 @@ shhhtingrum(){
 
     this.all()
     
-    
-
+  
   }
+
+
 }
-
-

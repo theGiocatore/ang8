@@ -15,7 +15,6 @@ export class AutentifikacijaService{
       (response) => {
         this.router.navigate(['/home']);
         alert("Uspesno ste kreirali Vas nalog!")
-      
     }
     )
     .catch(
@@ -39,7 +38,6 @@ export class AutentifikacijaService{
       (err) => alert(err)
     )
     }
-  
     vratiToken(){
         firebase.auth().currentUser.getIdToken()
         .then(
@@ -47,7 +45,7 @@ export class AutentifikacijaService{
         )
         return this.token;
     }
-    prijavljen(){                       /* prati da li je korisnik prijavljen ili ne */
+    prijavljen(){                     
       return this.token != null;
     }
 

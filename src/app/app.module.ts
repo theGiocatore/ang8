@@ -17,6 +17,7 @@ import { LogInComponent } from './log-in/log-in.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryLibrary } from 'src/in-memory-library';
+import { ShopService } from './shop.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { InMemoryLibrary } from 'src/in-memory-library';
       InMemoryLibrary, {dataEncapsulation: false}
     )
   ],
-  providers: [],
+  providers: [ShopService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
