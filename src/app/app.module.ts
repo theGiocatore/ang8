@@ -15,6 +15,8 @@ import { HttpClientModule} from "@angular/common/http"
 import { CartComponent } from './shopic/item/cart/cart.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryLibrary } from 'src/in-memory-library';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,10 @@ import { SignInComponent } from './sign-in/sign-in.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryLibrary, {dataEncapsulation: false}
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
