@@ -1,7 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Item } from 'src/app/model/item';
 import { ShopService } from 'src/app/shop.service';
 import { ActivatedRoute } from '@angular/router';
+
 
 
 @Component({
@@ -10,14 +11,12 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-artikal : Item;
-varijabla: Item[];
-kolicina = {
-  value:1
-}
-id:number;
-  constructor(private servis:ShopService, private route: ActivatedRoute) { }
+  artikal : Item;
+  varijabla: Item[];
+  kolicina = {value:1}
+  id:number;
 
+  constructor(private servis:ShopService, private route: ActivatedRoute) { }
 
   dovuciObjekte(){
     this.servis.getAll().subscribe(
@@ -71,6 +70,7 @@ id:number;
       this.pronadjiArtikal()
       
     }
+  
   
   ngOnInit() {
     
