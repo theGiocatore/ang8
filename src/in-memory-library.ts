@@ -8,7 +8,7 @@ export class InMemoryLibrary implements InMemoryDbService {
                 ime:"Living Room Furniture",
                 cena:"350.000,00",
                 opis:"Nice piece of furniture, that will make your living room looks awesome! Buy it at special price during promotional period until the end of the month.",
-                slika:"../../assets/livingRoomFurniture.jpg",
+                slika:"../../assets/livingRoomFurniture.png",
                 vrsta:"Livingroom"
               },
               {
@@ -24,7 +24,7 @@ export class InMemoryLibrary implements InMemoryDbService {
                 ime: "Bathroom chair",
                 cena:"35.000,00",
                 opis:"An amazing chair to have it in your house. While waiting someone to finish it's job, you can enjoy in comfortable sitting and not so comfortable oddors inside your bathroom.",
-                slika:"../../assets/chair1.jpg",
+                slika:"../../assets/chair1.png",
                 vrsta:"Bathroom"
               },
               {
@@ -40,7 +40,7 @@ export class InMemoryLibrary implements InMemoryDbService {
                 ime: "King size bed",
                 cena:"130.000,00",
                 opis:"Sleep like a king! For symbolic price you can afford this amazing piece of furniture. To share it with your wife and girlfriends. From now on, you won't have problems with your spine.",
-                slika:"../../assets/bedRoom.jpg",
+                slika:"../../assets/bedRoom.png",
                 vrsta:"Bedroom"
               },
               {
@@ -48,7 +48,7 @@ export class InMemoryLibrary implements InMemoryDbService {
                 ime: "Night table",
                 cena:"9.000,00",
                 opis:" Lorem ipsum dolores amanet something like tihs, i don't know how it goes. Anyway some block of text should stay here. Sorry for my bad english, i'll try to improve it. ",
-                slika:"../../assets/nighttable.jpg",
+                slika:"../../assets/nighttable2.png",
                 vrsta:"Bedroom"
               },
               {
@@ -56,7 +56,7 @@ export class InMemoryLibrary implements InMemoryDbService {
                 ime: "Desk",
                 cena:"10.000,00",
                 opis:"Some text about how this desk looks awesome! And some sweet talks to convince you to buy this piece of furniture, which is not actually cool at all. That's all folks.",
-                slika:"../../assets/radniSto.jpg",
+                slika:"../../assets/radniSto2.jpg",
                 vrsta:"Livingroom"
               }
         ];
